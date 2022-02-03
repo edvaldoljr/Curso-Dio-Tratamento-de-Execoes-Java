@@ -13,7 +13,8 @@ public class UncheckedException {
 
             try {
                 int resultado = dividir(Integer.parseInt(a), Integer.parseInt(b));
-                System.out.println("Resultado: " + resultado);
+                JOptionPane.showMessageDialog(null,"Resultado: " + resultado);
+                //System.out.println("Resultado: " + resultado);
                 continueLooping = false;
             } catch (NumberFormatException e) {
                 e.printStackTrace();
